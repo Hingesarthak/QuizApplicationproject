@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App.SplashScreen"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".normalset"
+            android:exported="false" />
+
+        <activity
+            android:name=".Nset1"
+            android:exported="false" />
+        <activity
+            android:name=".resulteasyset5"
+            android:exported="false" />
+        <activity
+            android:name=".Resulteasyset4"
+            android:exported="false" />
+        <activity
+            android:name=".Resulteasyset3"
+            android:exported="false" />
+        <activity
+            android:name=".Resulteasyset2"
+            android:exported="false" />
+        <activity
+            android:name=".Eset5"
+            android:exported="false" />
+        <activity
+            android:name=".Eset4"
+            android:exported="false" />
+        <activity
+            android:name=".Eset3"
+            android:exported="false" />
+        <activity
+            android:name=".Eset2"
+            android:exported="false" />
+        <activity
+            android:name=".Resulteasyset1"
+            android:exported="true" />
+        <activity
+            android:name=".Eset1"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.App.SplashScreen"
+        android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+
+    </application>
+
+</manifest>
+

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/circularImage"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thinkinglogo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="|| QUIZ PRO ||"
+            android:textSize="38dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Difficulties  :"
+            android:textSize="38dp"
+            android:gravity="left"
+            android:textColor="#A44C4C"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="    EASY "
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="    Normal "
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="    HARD "
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="   EXTREME HARD "
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+
+
+
+    </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

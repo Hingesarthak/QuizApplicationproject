@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Resulteasyset3"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANSWER LIST"
+        android:textSize="45dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="45dp" />
+
+    <!-- Q1 -->
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1. What do bees make?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Honey" />
+
+    <!-- Q2 -->
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q2. What color is the sun?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Yellow" />
+
+    <!-- Q3 -->
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q3. Which animal barks?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Dog" />
+
+    <!-- Q4 -->
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q4. What is the capital of Maharashtra?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Mumbai" />
+
+    <!-- Q5 -->
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q5. What gas do plants breathe in?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Carbon Dioxide" />
+
+    <!-- Q6 -->
+    <TextView
+        android:id="@+id/question6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q6. How many legs does a spider have?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: 8" />
+
+    <!-- Q7 -->
+    <TextView
+        android:id="@+id/question7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q7. What shape is a football?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Round" />
+
+    <!-- Q8 -->
+    <TextView
+        android:id="@+id/question8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q8. Which sense do we use our nose for?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Smell" />
+
+    <!-- Q9 -->
+    <TextView
+        android:id="@+id/question9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q9. What do cows drink?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Water" />
+
+    <!-- Q10 -->
+    <TextView
+        android:id="@+id/question10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q10. What do you wear on your feet?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edittext19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: " />
+
+    <EditText
+        android:id="@+id/edittext20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Option: Shoes" />
+
+</LinearLayout>
+</ScrollView>

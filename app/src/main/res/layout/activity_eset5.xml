@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eset5"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="12dp">
+
+    <!-- Header Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical">
+
+      <ImageView
+          android:id="@+id/imageview"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginEnd="12dp"
+          android:src="@drawable/backbuttonlogo1" />
+
+      <ImageView
+          android:id="@+id/home"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:src="@drawable/homelogo" />
+    </LinearLayout>
+
+    <!-- Q1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1. What color are bananas when ripe?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/options1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <RadioButton android:text="Red" />
+          <RadioButton android:text="Green" />
+          <RadioButton android:text="Yellow" />
+          <RadioButton android:text="Blue" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q2 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q2. How many days are there in a leap year?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="365" />
+          <RadioButton android:text="366" />
+          <RadioButton android:text="360" />
+          <RadioButton android:text="370" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3. What gas do humans need to breathe?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Oxygen" />
+          <RadioButton android:text="Hydrogen" />
+          <RadioButton android:text="Carbon Dioxide" />
+          <RadioButton android:text="Nitrogen" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q4 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q4. Which shape has 4 equal sides?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Triangle" />
+          <RadioButton android:text="Square" />
+          <RadioButton android:text="Circle" />
+          <RadioButton android:text="Oval" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q5 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q5. What fruit is red and used to make ketchup?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Apple" />
+          <RadioButton android:text="Tomato" />
+          <RadioButton android:text="Strawberry" />
+          <RadioButton android:text="Cherry" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q6 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q6. What do you call water in solid form?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Steam" />
+          <RadioButton android:text="Rain" />
+          <RadioButton android:text="Ice" />
+          <RadioButton android:text="Gas" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q7 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q7. Which bird is known for mimicking sounds?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Sparrow" />
+          <RadioButton android:text="Parrot" />
+          <RadioButton android:text="Crow" />
+          <RadioButton android:text="Eagle" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q8 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q8. What do cows produce that we drink?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Juice" />
+          <RadioButton android:text="Milk" />
+          <RadioButton android:text="Butter" />
+          <RadioButton android:text="Water" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q9 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q9. What do plants use sunlight for?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="Photosynthesis" />
+          <RadioButton android:text="Breathing" />
+          <RadioButton android:text="Sleeping" />
+          <RadioButton android:text="Watering" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Q10 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q10. What is the freezing point of water?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+        <RadioGroup
+            android:id="@+id/options10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RadioButton android:text="0°C" />
+          <RadioButton android:text="100°C" />
+          <RadioButton android:text="50°C" />
+          <RadioButton android:text="25°C" />
+        </RadioGroup>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnsubmit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="48dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_gradient"
+        android:padding="12dp" />
+
+  </LinearLayout>
+</ScrollView>

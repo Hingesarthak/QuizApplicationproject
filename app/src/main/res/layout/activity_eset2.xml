@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eset2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficulty : Easy (set 2) "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginRight="80dp"/>
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@drawable/backbuttonlogo1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/homelogo"
+                android:layout_margin="5dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Question 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q1. How many days are there in a week?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option1A" android:text="5" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option1B" android:text="6" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option1C" android:text="7" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option1D" android:text="8" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Repeat this pattern for all questions -->
+
+                <!-- Question 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q2. What color is the sky on a clear day?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option2A" android:text="Green" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option2B" android:text="Blue" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option2C" android:text="Red" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option2D" android:text="Black" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q3. How many legs does a spider have?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option3A" android:text="6" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option3B" android:text="8" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option3C" android:text="4" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option3D" android:text="10" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q4. What fruit is yellow and curved?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option4A" android:text="Apple" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option4B" android:text="Grapes" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option4C" android:text="Banana" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option4D" android:text="Mango" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 5 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q5. Which animal says 'meow'?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option5A" android:text="Dog" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option5B" android:text="Cow" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option5C" android:text="Cat" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option5D" android:text="Sheep" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 6 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q6. Which shape has 3 sides?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option6A" android:text="Square" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option6B" android:text="Circle" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option6C" android:text="Triangle" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option6D" android:text="Rectangle" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Question 7 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q7. Which device is used to make calls?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option7A" android:text="Radio" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option7B" android:text="Television" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option7C" android:text="Telephone" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option7D" android:text="Camera" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 8 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q8. What do you drink when you are thirsty?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option8A" android:text="Water" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option8B" android:text="Oil" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option8C" android:text="Ink" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option8D" android:text="Juice" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 9 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q9. Which sense organ is used to see?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option9A" android:text="Ears" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option9B" android:text="Nose" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option9C" android:text="Eyes" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option9D" android:text="Tongue" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Question 10 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/question10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q10. What do you wear on your feet?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/optionsGroup10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RadioButton android:id="@+id/option10A" android:text="Shirt" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option10B" android:text="Hat" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option10C" android:text="Shoes" android:textStyle="bold"/>
+                            <RadioButton android:id="@+id/option10D" android:text="Watch" android:textStyle="bold"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+        <!-- Submit Button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp">
+
+                    <Button
+                        android:id="@+id/btnsubmit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:background="@drawable/button_gradient"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
