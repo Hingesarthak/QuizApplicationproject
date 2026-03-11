@@ -199,7 +199,7 @@
                             android:id="@+id/question4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Q4. What planet is known as the Red Planet?"
+                            android:text="Q4. what planet is know as white,black etc?"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:layout_marginBottom="8dp" />
