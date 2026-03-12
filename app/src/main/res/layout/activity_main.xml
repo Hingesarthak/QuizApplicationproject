@@ -1,132 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#F8F9FA">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/circularImage"
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/circle"
-            android:scaleType="centerCrop"
-            android:src="@drawable/thinkinglogo"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="|| QUIZ PRO ||"
-            android:textSize="38dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-
-    </LinearLayout>
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="Difficulties  :"
-            android:textSize="38dp"
-            android:gravity="left"
-            android:textColor="#A44C4C"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp" />
-
-    <RadioGroup
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="25dp">
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
-        <RadioButton
-            android:id="@+id/radio1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="    EASY "
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:textStyle="italic" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio2"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="    Normal "
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:textStyle="italic" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AI Study Planner" android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/radio3"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="    HARD "
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" app:cardCornerRadius="16dp" app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="16dp" android:orientation="vertical" android:background="#E3F2FD">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Upload Syllabus for AI Analysis" android:textStyle="italic"/>
+                    <Button android:id="@+id/btn_ai_gen" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="Generate Schedule" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-        <RadioButton
-            android:id="@+id/radio4"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:text="   EXTREME HARD "
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:textStyle="italic"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Upcoming Deadlines" android:textSize="18sp" android:layout_marginTop="24dp" android:textStyle="bold"/>
 
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginTop="8dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp" android:layout_marginBottom="8dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp">
+                        <View android:id="@+id/priority_dot" android:layout_width="12dp" android:layout_height="12dp"
+                            android:background="@android:color/holo_red_light" android:layout_centerVertical="true"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Maths Assignment" android:layout_toEndOf="@id/priority_dot" android:layout_marginStart="12dp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Due: 6 PM" android:layout_alignParentEnd="true" android:textSize="12sp"/>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" app:cardCornerRadius="20dp" app:cardBackgroundColor="#212121">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:gravity="center" android:padding="24dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Focus Session" android:textColor="@color/white"/>
+                    <TextView android:id="@+id/timer_text" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="25:00" android:textSize="40sp" android:textColor="#4CAF50" android:textStyle="bold"/>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Start Pomodoro" android:layout_marginTop="12dp" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Performance Dashboard" android:textSize="18sp" android:layout_marginTop="24dp" android:textStyle="bold"/>
 
-    </RadioGroup>
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:columnCount="2" android:layout_marginTop="8dp">
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="4dp" app:cardCornerRadius="12dp">
+                    <LinearLayout android:padding="16dp" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="Score" android:textSize="12sp"/>
+                        <TextView android:text="85%" android:textSize="24sp" android:textColor="#6200EE" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="4dp" app:cardCornerRadius="12dp">
+                    <LinearLayout android:padding="16dp" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="Hours" android:textSize="12sp"/>
+                        <TextView android:text="4.2" android:textSize="24sp" android:textColor="#03DAC5" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
 
+            <View android:layout_width="match_parent" android:layout_height="80dp"/> </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
